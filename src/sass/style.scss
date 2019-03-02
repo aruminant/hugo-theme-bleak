@@ -51,7 +51,7 @@ a {
   text-decoration: none;
   font-weight: 400;
   -webkit-transition: all ease-out 0.2s;
-  transition: all ease-out 0.2s;
+  transition: all ease-out 0.1s;
 
   &:hover,
   &:focus {
@@ -391,7 +391,7 @@ body {
 .menu-initial {
 
   body {
-    transition:  all ease-out 0.3s;
+    transition:  all ease-out 0.1s;
     overflow: hidden;
   }
 }
@@ -533,9 +533,6 @@ body {
 
 #nav {
   background: #fff;
-  transition: all ease-out 0.4s;
-  transform: translate3d(0,0,0);
-  transform-style: preserve-3d;
 
   opacity: 1;
   left: 0;
@@ -621,14 +618,6 @@ body {
   }
 }
 
-.loading {
-
-  #nav {
-    transform: translate3d(0,-100%,0);
-    opacity: 0;
-  }
-}
-
 #menu, #tocMenu, #subscription {
   display: none;
   position: fixed;
@@ -641,10 +630,10 @@ body {
   box-sizing: border-box;
   padding: 3em 0 0;
   overflow: hidden;
-  transition: all ease-out 0.3s;
+  transition: all ease-out 0.1s;
   transform: translate3d(0,2em,0);
   transform-style: preserve-3d;
-  opacity: 0;
+  opacity: 1;
   z-index: 100;
 
   @media only screen and (max-width: $breakpoint-tablet) {
@@ -686,7 +675,7 @@ body {
       border-bottom: 4px solid $color-primary-default;
       box-shadow: 0 0.125em 0.125em rgba(0,0,0,0.1);
       transform: rotate(2.5deg);
-      transition: all ease-out 0.2s;
+      transition: all ease-out 0.1s;
       z-index: 115;
     }
 
@@ -872,7 +861,7 @@ body {
     height: 100%;
     background: $color-gray-15;
     opacity: 0;
-    transition: all ease-out 0.3s;
+    transition: all ease-out 0.1s;
     transform-style: preserve-3d;
   }
 }
@@ -1127,7 +1116,7 @@ body {
   background: $color-gray-15;
   color: $color-gray-50;
   z-index: 20;
-  transition: all ease-out 0.4s;
+  transition: all ease-out 0.1s;
   transform: translate3d(0,0,0);
   transform-style: preserve-3d;
   opacity: 1;
@@ -1322,14 +1311,7 @@ body {
       z-index: 25;
 
       .inner {
-        transition: all ease-in 0.5s;
-      }
-    }
-
-    &.active {
-
-      .inner {
-        transform: scale(1.5);
+        transition: all ease-in 0.1s;
       }
     }
 
@@ -1473,7 +1455,7 @@ body {
         border-top: 4px solid $color-primary-default;
         box-shadow: 0 0 2em rgba(0,0,0,0.2);
         transform: rotate(5deg);
-        transition: all ease-out 0.2s;
+        transition: all ease-out 0.1s;
       }
     }
 
@@ -1724,7 +1706,7 @@ body {
     .post-nav-teaser {
       display: block;
       padding: 1em;
-      transition: all ease-out 0.2s;
+      transition: all ease-out 0.1s;
       max-width: 25em;
       overflow: visible;
 
@@ -1771,7 +1753,7 @@ body {
         display: none;
         width: 100%;
         box-sizing: border-box;
-        transition: all ease-out 0.2s;
+        transition: all ease-out 0.1s;
 
         .post-nav-title {
           display: block;
