@@ -1195,8 +1195,8 @@ body {
 
     img {
       display: block;
-      width: 70%;
-      height: auto;
+      object-fit: scale-down;
+      height: 200px;
       margin: 0;
       padding: 0;
     }

@@ -11,10 +11,20 @@
 		</figure>
 		{{ end }}
 		<span class="post-meta">
-			<span class="post-date">{{ .Date.Format "2 Jan 2006" }}</span>
+			<!--<span class="post-date">{{ .Date.Format "2 Jan 2006" }}</span> |-->
 		</span>
-		<h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
-		<p class="post-excerpt">{{ .Summary }}</p>
+		<h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}
+			{{ if .ReadingTime }}
+			<span class="estimated-reading-time">({{ .ReadingTime }} min.)</span>
+			{{ end }}
+		</a></h2>
+		<p class="post-excerpt">
+			{{ if .Params.postsummary }}
+				{{ .Params.postsummary | markdownify }}
+			{{ else }}
+				{{ .Summary }}
+			{{ end}}
+		</p>
 		<span class="post-more"><a href="{{ .Permalink }}">Read more <i class="fa fa-angle-right"></i></a></span>
 	</div>
 </article>

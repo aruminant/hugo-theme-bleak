@@ -48,6 +48,10 @@
     <meta name="description" content="{{ .Site.Params.description }}" />
     {{ end }}
 
+    {{ if .Keywords }}
+    <meta content="{{ delimit .Keywords ", " }}" name="keywords">
+    {{ end }}
+
     {{ if ne .Site.Params.domainVerification "" }}
     <meta name="p:domain_verify" content="{{ .Site.Params.domainVerification }}"/>
     {{ end }}
