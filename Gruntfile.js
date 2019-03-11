@@ -17,6 +17,7 @@ module.exports = function(grunt) {
                 'bower_components/imagesloaded/imagesloaded.pkgd.min.js',
                 'bower_components/masonry/dist/masonry.pkgd.min.js',
                 'bower_components/fitvids/jquery.fitvids.js',
+                'node_modules/tinyquoter/dist/tinyquoter.min.js',
                 //'bower_components/highlightjs/highlight.pack.min.js',
                 'bower_components/nprogress/nprogress.js',
                 'src/js/vendor/gist-embed.min.js'

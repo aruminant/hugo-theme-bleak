@@ -259,6 +259,9 @@ jQuery(function($) {
     var ajaxContainer = $('#ajax-container');
 
     $(document).ready( function() {
+      if (window.TinyQ) {
+        window.TinyQ.init();
+      }
       // Async CSS loader for making PageSpeed happy !
       var stylesheet = document.createElement('link');
       stylesheet.href = config.baseUrl + 'css/main.css';
